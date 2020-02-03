@@ -18,7 +18,7 @@ export const game = createSlice({
     captureSquare: (state, action) => {
       const { index } = action.payload
 
-      // If the square is 'uncaptured', capture it
+      // If the square is 'uncaptured', capture it(check!)
       if (state.squares[index] === null) {
         state.squares[index] = state.player
       }
